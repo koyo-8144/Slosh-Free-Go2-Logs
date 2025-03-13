@@ -23,11 +23,12 @@ Default learning rate update based on KL divergence
 Result:
 Learning rate is gradually decreasing and mean reward is over the last time when leanring rate dropped at very begginig.
 This is what happened in isaaclab but the surrogate loss never get close to zero, need to look into it.
-
+It's been stable and good but around 7k, learning rate dropped and rewards messed up but it's back once learning rate went up again.
 
 Plan:
+Try feet_airtime reward 
 
 
-Learning rate update from KL -> 1.05
+#Learning rate update from KL -> 1.05
 
-Try feet_airtime reward or contact reward + sin,cos as observations
+#Try feet_airtime reward or contact reward + sin,cos as observations
