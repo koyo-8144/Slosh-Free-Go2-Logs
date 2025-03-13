@@ -1,0 +1,7 @@
+{"time":"2025-03-13T11:51:01.616038357Z","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/psxkf4/Genesis/logs/go2_slosh_free_v3/20250313_115051/wandb/run-20250313_115101-64zj7e6d/logs/debug-core.log"}
+{"time":"2025-03-13T11:51:01.718905983Z","level":"INFO","msg":"created new stream","id":"64zj7e6d"}
+{"time":"2025-03-13T11:51:01.718926672Z","level":"INFO","msg":"stream: started","id":"64zj7e6d"}
+{"time":"2025-03-13T11:51:01.718936651Z","level":"INFO","msg":"writer: Do: started","stream_id":"64zj7e6d"}
+{"time":"2025-03-13T11:51:01.718945056Z","level":"INFO","msg":"sender: started","stream_id":"64zj7e6d"}
+{"time":"2025-03-13T11:51:01.718969131Z","level":"INFO","msg":"handler: started","stream_id":"64zj7e6d"}
+{"time":"2025-03-13T11:51:02.010684029Z","level":"INFO","msg":"Starting system monitor"}
