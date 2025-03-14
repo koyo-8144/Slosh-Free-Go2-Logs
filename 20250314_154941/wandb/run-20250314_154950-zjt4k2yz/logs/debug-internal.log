@@ -1,0 +1,15 @@
+{"time":"2025-03-14T15:49:50.398784597Z","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/psxkf4/Genesis/logs/go2_slosh_free_v3/20250314_154941/wandb/run-20250314_154950-zjt4k2yz/logs/debug-core.log"}
+{"time":"2025-03-14T15:49:50.501806045Z","level":"INFO","msg":"created new stream","id":"zjt4k2yz"}
+{"time":"2025-03-14T15:49:50.501829548Z","level":"INFO","msg":"stream: started","id":"zjt4k2yz"}
+{"time":"2025-03-14T15:49:50.501840568Z","level":"INFO","msg":"writer: Do: started","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T15:49:50.501866056Z","level":"INFO","msg":"sender: started","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T15:49:50.501926818Z","level":"INFO","msg":"handler: started","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T15:49:50.7719779Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T17:41:36.146209577Z","level":"INFO","msg":"stream: closing","id":"zjt4k2yz"}
+{"time":"2025-03-14T17:41:36.146224575Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T17:41:36.146554221Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T17:41:38.029383333Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-14T17:41:38.252330691Z","level":"INFO","msg":"handler: closed","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T17:41:38.252380864Z","level":"INFO","msg":"writer: Close: closed","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T17:41:38.252397445Z","level":"INFO","msg":"sender: closed","stream_id":"zjt4k2yz"}
+{"time":"2025-03-14T17:41:38.252434945Z","level":"INFO","msg":"stream: closed","id":"zjt4k2yz"}
