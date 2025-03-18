@@ -1,0 +1,7 @@
+{"time":"2025-03-18T15:49:17.274715222Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/psxkf4/Genesis/logs/go2_slosh_free_v3/20250318_154907/wandb/run-20250318_154917-3xnahtcn/logs/debug-core.log"}
+{"time":"2025-03-18T15:49:17.377696911Z","level":"INFO","msg":"created new stream","id":"3xnahtcn"}
+{"time":"2025-03-18T15:49:17.377728069Z","level":"INFO","msg":"stream: started","id":"3xnahtcn"}
+{"time":"2025-03-18T15:49:17.377763445Z","level":"INFO","msg":"sender: started","stream_id":"3xnahtcn"}
+{"time":"2025-03-18T15:49:17.377763746Z","level":"INFO","msg":"writer: Do: started","stream_id":"3xnahtcn"}
+{"time":"2025-03-18T15:49:17.377774105Z","level":"INFO","msg":"handler: started","stream_id":"3xnahtcn"}
+{"time":"2025-03-18T15:49:17.654745745Z","level":"INFO","msg":"Starting system monitor"}

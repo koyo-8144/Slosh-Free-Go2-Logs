@@ -1,0 +1,42 @@
+Get slosh_free back to 0.015
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(5e-4, self.learning_rate / 1.025)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.025)
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"orientation": -0.1,
+"collision": -1.0,
+"dof_pos_limits": -10.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.015,
+
+"num_commands": 3,
+"num_obs": 45,
+"num_privileged_obs": 48, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10,
+"alpha": 0.9
+
+Learning rate update from KL:
+rate -> 1.025
+minumum -> 5e-4
+
+
+Result:
+Stopped due to NaN but slosh_free reward curve is stable.
+In evaluation of 2k, it looks like tilting but need visualisation.
+
+
+Plan:
+Try with exactly the same conditions.
+# While doing that,
+# visualise desired and current pitch for evaluation
+# finish episode once NaN is detected
+# look into seed 

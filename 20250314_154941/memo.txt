@@ -29,4 +29,8 @@ Learning rate did not drop down and learning is stable as intended.
 
 
 Plan:
+Try similar_to_default reward
+
+
+
 

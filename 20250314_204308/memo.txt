@@ -1,0 +1,40 @@
+Add similar_to_default reward
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"orientation": -0.1,
+"collision": -1.0,
+"dof_pos_limits": -10.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"similar_to_default": -0.5,
+"slosh_free": 1.0,
+
+"num_commands": 3,
+"num_obs": 45,
+"num_privileged_obs": 48, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 1,
+
+Learning rate update from KL:
+minumum -> 5e-4
+
+
+Result:
+base_height is pretty low compared to before.
+"base_height_target": 0.28 is too low?
+minumum -> 5e-4 leads to local minium?
+Some fluctuation but relatively stable.
+The motion is small. 
+
+Plan:
+Update slosh_free function and set it to 0.015,
+increase linvel_update_freq to 10, 
+filtering alpha 0.9
+remove similar_to_default,
+decrease action_rate to -0.01
+
