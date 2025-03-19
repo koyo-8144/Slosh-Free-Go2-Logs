@@ -1,0 +1,43 @@
+"slosh_free": 0.015 -> "slosh_free": 0.015,
+"dof_pos_limits": -10.0 -> "dof_pos_limits": 0.0, 
+"orientation": -0.1 -> "orientation": -0.0,
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"collision": -1.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.015,
+"dof_pos_limits": 0.0,
+"orientation": -0.0,
+
+"num_commands": 3,
+"num_obs": 46,
+"num_privileged_obs": 49, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10.0,
+"alpha": 0.0,
+
+"acc_sigma": 0.2, 
+"sign_flip_rate": 0.0
+
+Learning rate update from KL:
+rate -> 1.025
+minumum -> 5.5e-4
+
+
+Result: 
+There is still slosh-free increase and decrease patters -> That is not because of dof_pos_limits and orientation.
+slosh_free is lower than when I had dof_pos_limits and orientation, but other rewards are same.
+In evaluation, no problem with walking even without orientation and dof_pos_limits rewards.
+Found a mistake in resample funciton
+
+Plan:
+dt = 1 / self.linvel_update_actual_freq
+
+# Try "acc_sigma": 0.1
+# Try resampling only positive velocity and see if there is still slosh-free increase and decrease patters

@@ -1,0 +1,17 @@
+{"time":"2025-03-18T17:41:48.893864108Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/psxkf4/Genesis/logs/go2_slosh_free_v3/20250318_174139/wandb/run-20250318_174148-w36kps0o/logs/debug-core.log"}
+{"time":"2025-03-18T17:41:48.996805122Z","level":"INFO","msg":"created new stream","id":"w36kps0o"}
+{"time":"2025-03-18T17:41:48.996828155Z","level":"INFO","msg":"stream: started","id":"w36kps0o"}
+{"time":"2025-03-18T17:41:48.996846199Z","level":"INFO","msg":"writer: Do: started","stream_id":"w36kps0o"}
+{"time":"2025-03-18T17:41:48.996846109Z","level":"INFO","msg":"handler: started","stream_id":"w36kps0o"}
+{"time":"2025-03-18T17:41:48.996876495Z","level":"INFO","msg":"sender: started","stream_id":"w36kps0o"}
+{"time":"2025-03-18T17:41:49.252626705Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-18T17:53:49.306145189Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-18T18:03:10.28591803Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/tengjinghuangyang-university-of-nottingham/custom_genesis/w36kps0o/file_stream\": dial tcp 35.186.228.49:443: connect: no route to host"}
+{"time":"2025-03-18T18:31:11.335341591Z","level":"INFO","msg":"stream: closing","id":"w36kps0o"}
+{"time":"2025-03-18T18:31:11.335388168Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-18T18:31:11.335829582Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-18T18:31:12.597342381Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-18T18:31:12.822350349Z","level":"INFO","msg":"handler: closed","stream_id":"w36kps0o"}
+{"time":"2025-03-18T18:31:12.822399481Z","level":"INFO","msg":"sender: closed","stream_id":"w36kps0o"}
+{"time":"2025-03-18T18:31:12.822397247Z","level":"INFO","msg":"writer: Close: closed","stream_id":"w36kps0o"}
+{"time":"2025-03-18T18:31:12.822527279Z","level":"INFO","msg":"stream: closed","id":"w36kps0o"}

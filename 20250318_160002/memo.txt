@@ -1,0 +1,39 @@
+"linvel_update_actual_freq": 10.0
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"orientation": -0.1,
+"collision": -1.0,
+"dof_pos_limits": -10.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.015,
+
+"num_commands": 3,
+"num_obs": 46,
+"num_privileged_obs": 49, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10.0,
+"alpha": 0.0,
+
+"acc_sigma": 0.2, 
+"sign_flip_rate": 0.1
+
+Learning rate update from KL:
+rate -> 1.025
+minumum -> 5.25e-4
+
+
+Result:
+More stable than before thanks to new resampling method.
+This is not only this condition but slosh_free is basically repeating "increase" and "decrease".
+The increase and decrease span for slosh_free is alighned with orientation reward.
+And increase and decrease changing timing kind of match drops of tracking_lin_vel_rew tracking_ang_vel_rew
+Learning rate has not reached 5.25e-4.
+
+Plan:
+Try "sign_flip_rate": 0.0 and see if the slosh_free gets higher than before.

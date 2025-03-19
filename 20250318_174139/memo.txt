@@ -1,0 +1,41 @@
+Try "sign_flip_rate": 0.0 and see if the slosh_free gets higher than before.
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"orientation": -0.1,
+"collision": -1.0,
+"dof_pos_limits": -10.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.015,
+
+"num_commands": 3,
+"num_obs": 46,
+"num_privileged_obs": 49, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10.0,
+"alpha": 0.0,
+
+"acc_sigma": 0.2, 
+"sign_flip_rate": 0.0
+
+Learning rate update from KL:
+rate -> 1.025
+minumum -> 5.25e-4
+
+
+Result:
+Not much difference when I set "sign_flip_rate": 0.1.
+It stopped around 3k due to NaN, when slosh_free surged, any other rewards dropped and learning rate reached to 5.25e-4.
+But looks like slosh_free reward is more stable than "sign_flip_rate": 0.1.
+slosh_free increase and decrease pattern is less obvious but still have the pattern.
+
+Plan:
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(5.5e-4, self.learning_rate / 1.025)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.025)

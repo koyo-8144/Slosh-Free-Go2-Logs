@@ -1,0 +1,58 @@
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(5.5e-4, self.learning_rate / 1.025)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.025)
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"orientation": -0.1,
+"collision": -1.0,
+"dof_pos_limits": -10.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.015,
+
+"num_commands": 3,
+"num_obs": 46,
+"num_privileged_obs": 49, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10.0,
+"alpha": 0.0,
+
+"acc_sigma": 0.2, 
+"sign_flip_rate": 0.0
+
+Learning rate update from KL:
+rate -> 1.025
+minumum -> 5.5e-4
+
+
+Result: 
+More stable and higher slosh_free than last time thanks to minumum -> 5.5e-4. 
+But there is slosh_free increase and decrease patter same as last time, need to figure out the reason.
+After 1.8k, slosh_free started to decrease even though nothing is wrong with learning rate.
+But around the same time, orientation and dof_pos_limits rewards started to decrease.
+Stopped around 4.5k due to NaN.
+In evaluation, 
+
+
+Plan:
+It was
+"slosh_free": 0.015 -> "slosh_free": 0.015
+"dof_pos_limits": -10.0 -> "dof_pos_limits": -10.0
+"orientation": -0.1 -> "orientation":  -0.1
+
+Try
+
+"slosh_free": 0.015 -> "slosh_free": 0.00725
+"dof_pos_limits": -10.0 -> "dof_pos_limits": -2.5
+"orientation": -0.1 -> "orientation":  -0.05
+==> looks good
+
+"slosh_free": 0.015,
+"dof_pos_limits": 0.0,
+"orientation": -0.0,

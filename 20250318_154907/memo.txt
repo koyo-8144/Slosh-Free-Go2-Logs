@@ -31,6 +31,8 @@ minumum -> 5.25e-4
 
 
 Result:
-No actual acc x change due to "linvel_update_freq": 1
+No actual acc x change due to "linvel_update_freq": 1.
+Mean reward: 0.00 and stoppe so soon due to NaN.
 
 Plan:
+"linvel_update_actual_freq": 10.0
