@@ -30,11 +30,12 @@ minumum -> 5.5e-4
 
 Result:
 IT is now stable and every rewards are higher than before.
+slosh_free looks like starting to converge from 4.5k.
 In evaluation,
 
 
 Plan:
-Try originals
+Try originals.
 "slosh_free": 0.015
 "dof_pos_limits": -10.0 
 "orientation": -0.1
