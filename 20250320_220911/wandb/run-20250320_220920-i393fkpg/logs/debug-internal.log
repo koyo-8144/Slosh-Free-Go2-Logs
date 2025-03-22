@@ -1,0 +1,15 @@
+{"time":"2025-03-20T22:09:20.155067596+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/alienware/koyo_ws/Genesis/Slosh-Free-Go2-Logs/20250320_220911/wandb/run-20250320_220920-i393fkpg/logs/debug-core.log"}
+{"time":"2025-03-20T22:09:20.259681354+09:00","level":"INFO","msg":"created new stream","id":"i393fkpg"}
+{"time":"2025-03-20T22:09:20.259734877+09:00","level":"INFO","msg":"stream: started","id":"i393fkpg"}
+{"time":"2025-03-20T22:09:20.259892706+09:00","level":"INFO","msg":"handler: started","stream_id":"i393fkpg"}
+{"time":"2025-03-20T22:09:20.259909365+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"i393fkpg"}
+{"time":"2025-03-20T22:09:20.260002442+09:00","level":"INFO","msg":"sender: started","stream_id":"i393fkpg"}
+{"time":"2025-03-20T22:09:20.620382199+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-20T23:43:15.791997381+09:00","level":"INFO","msg":"stream: closing","id":"i393fkpg"}
+{"time":"2025-03-20T23:43:15.792041882+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-20T23:43:15.793037764+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-20T23:43:18.489856631+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-20T23:43:18.714064466+09:00","level":"INFO","msg":"handler: closed","stream_id":"i393fkpg"}
+{"time":"2025-03-20T23:43:18.714111897+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"i393fkpg"}
+{"time":"2025-03-20T23:43:18.714132161+09:00","level":"INFO","msg":"sender: closed","stream_id":"i393fkpg"}
+{"time":"2025-03-20T23:43:18.714201745+09:00","level":"INFO","msg":"stream: closed","id":"i393fkpg"}

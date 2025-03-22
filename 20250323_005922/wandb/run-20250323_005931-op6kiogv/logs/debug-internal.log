@@ -1,0 +1,15 @@
+{"time":"2025-03-23T00:59:31.085187731+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/alienware/koyo_ws/Genesis/Slosh-Free-Go2-Logs/20250323_005922/wandb/run-20250323_005931-op6kiogv/logs/debug-core.log"}
+{"time":"2025-03-23T00:59:31.189223476+09:00","level":"INFO","msg":"created new stream","id":"op6kiogv"}
+{"time":"2025-03-23T00:59:31.189274354+09:00","level":"INFO","msg":"stream: started","id":"op6kiogv"}
+{"time":"2025-03-23T00:59:31.189344453+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"op6kiogv"}
+{"time":"2025-03-23T00:59:31.1893964+09:00","level":"INFO","msg":"sender: started","stream_id":"op6kiogv"}
+{"time":"2025-03-23T00:59:31.189496854+09:00","level":"INFO","msg":"handler: started","stream_id":"op6kiogv"}
+{"time":"2025-03-23T00:59:31.493922514+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-23T02:32:01.714228888+09:00","level":"INFO","msg":"stream: closing","id":"op6kiogv"}
+{"time":"2025-03-23T02:32:01.71429725+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-23T02:32:01.715272241+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-23T02:32:05.037806554+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-23T02:32:05.344636485+09:00","level":"INFO","msg":"handler: closed","stream_id":"op6kiogv"}
+{"time":"2025-03-23T02:32:05.344706013+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"op6kiogv"}
+{"time":"2025-03-23T02:32:05.344742847+09:00","level":"INFO","msg":"sender: closed","stream_id":"op6kiogv"}
+{"time":"2025-03-23T02:32:05.344806777+09:00","level":"INFO","msg":"stream: closed","id":"op6kiogv"}

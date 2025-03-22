@@ -29,9 +29,10 @@ minumum -> 5.5e-4
 
 
 Result:
-IT is now stable and every rewards are higher than before.
+It is now stable and every rewards are higher than before.
 slosh_free looks like starting to converge from 4.5k.
-In evaluation,
+In evaluation, Go2 only tilted when it walks forward and it raised its front legs instead of bending its rear legs.
+
 
 
 Plan:
@@ -39,6 +40,17 @@ Try originals.
 "slosh_free": 0.015
 "dof_pos_limits": -10.0 
 "orientation": -0.1
+--> mean reward zero
+
+"slosh_free": 0.01,
+"dof_pos_limits": -5.0,
+"orientation": -0.05,
+--> over mean
+
+"slosh_free": 0.0125,
+"dof_pos_limits": -10.0,
+"orientation": -0.1,
+---> over mean
 
 
 # Try "acc_sigma": 0.1

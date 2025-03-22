@@ -1,0 +1,15 @@
+{"time":"2025-03-20T20:00:08.51147153+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/alienware/koyo_ws/Genesis/Slosh-Free-Go2-Logs/20250320_200000/wandb/run-20250320_200008-vxtcmhrz/logs/debug-core.log"}
+{"time":"2025-03-20T20:00:08.615295665+09:00","level":"INFO","msg":"created new stream","id":"vxtcmhrz"}
+{"time":"2025-03-20T20:00:08.61535147+09:00","level":"INFO","msg":"stream: started","id":"vxtcmhrz"}
+{"time":"2025-03-20T20:00:08.615419928+09:00","level":"INFO","msg":"sender: started","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T20:00:08.615426003+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T20:00:08.615497409+09:00","level":"INFO","msg":"handler: started","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T20:00:09.115247147+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-20T21:36:48.594343909+09:00","level":"INFO","msg":"stream: closing","id":"vxtcmhrz"}
+{"time":"2025-03-20T21:36:48.594391967+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-20T21:36:48.595480067+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-20T21:36:51.37601002+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-20T21:36:51.689291048+09:00","level":"INFO","msg":"handler: closed","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T21:36:51.689367407+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T21:36:51.689390938+09:00","level":"INFO","msg":"sender: closed","stream_id":"vxtcmhrz"}
+{"time":"2025-03-20T21:36:51.689471476+09:00","level":"INFO","msg":"stream: closed","id":"vxtcmhrz"}

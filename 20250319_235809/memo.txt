@@ -1,0 +1,68 @@
+Try 
+"slosh_free": 0.0125,
+"dof_pos_limits": -10.0,
+"orientation": -0.1,
+
+"tracking_lin_vel": 2.0,
+"tracking_ang_vel": 1.0,
+"lin_vel_z": -2.0,
+"ang_vel_xy": -0.05,
+"base_height": -30.0,
+"collision": -1.0,
+"torques": -1e-5,
+"dof_acc": -2.5e-7,
+"action_rate": -0.01,
+"slosh_free": 0.0125,
+"dof_pos_limits": -10.0,
+"orientation": -0.1,
+
+"num_commands": 3,
+"num_obs": 46,
+"num_privileged_obs": 49, # num_obs + base_lin_vel
+"only_positive_rewards": True,
+"linvel_update_freq": 10.0,
+"alpha": 0.0,
+
+"acc_sigma": 0.2, 
+"sign_flip_rate": 0.0
+
+Learning rate update from KL:
+rate -> 1.5
+minumum -> 1e-5
+
+
+Result:
+Stopped around 4.5k but found a mistake, there is no modification of learning rate adjustdment based on KL divergence on this alienware.
+On TUM laptop, the minumum learning rate and its decreasing rate I set were 5.5e-4 and 1.025 respectively, but now they were ->
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(1e-5, self.learning_rate / 1.5)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.5)
+And the reason for Nan is because learing rate dropped to 1e-5 but interestingly, there were no problem with minumum 1.3e-5.
+In evaluation of 4k, Go2 rarely tilted, but 2k it tried to tilt.
+
+Plan:
+Try
+"slosh_free": 0.015,
+"dof_pos_limits": -10.0,
+"orientation": -0.1,
+
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(1e-5, self.learning_rate / 1.5)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.5)
+--> mean reward 0.0
+
+if kl_mean > self.desired_kl * 2.0:
+    self.learning_rate = max(1.3e-5, self.learning_rate / 1.5)
+elif kl_mean < self.desired_kl / 2.0 and kl_mean > 0.0:
+    self.learning_rate = min(1e-2, self.learning_rate * 1.5)
+--> over mean reward 0.0
+
+When I compare these two, the only difference i learning rate minumum but these learnig rate curves are actually differenct.
+
+Learning rate update form KL minumum --> 1.3e-5
+"slosh_free": 0.015,
+"dof_pos_limits": -10.0,
+"orientation": -0.1,
+
